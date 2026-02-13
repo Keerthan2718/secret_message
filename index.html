@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>💌 Secret Message</h1>
+    <p>Only you can unlock this.</p>
+
+    <!-- PUZZLE 1 -->
+    <div id="p1">
+        <p>How i wished in the begining?</p>
+        <input id="a1" placeholder="type answer">
+        <button onclick="startMusic();check1()">Unlock</button>
+        <p class="err" id="e1"></p>
+    </div>
+
+    <!-- PUZZLE 2 -->
+    <div id="p2" class="hidden">
+        <p>What emoji do I send you the most?</p>
+        <input id="a2" placeholder="type emoji">
+        <button onclick="check2()">Unlock</button>
+        <p class="err" id="e2"></p>
+    </div>
+
+    <!-- FINAL -->
+    <div id="final" class="hidden">
+        <h2>Unlocked ❤️</h2>
+        <p id="msg"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+<audio id="bgmusic" autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+</html>
